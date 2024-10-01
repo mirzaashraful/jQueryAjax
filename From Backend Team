@@ -1,0 +1,59 @@
+
+https://dummyjson.com/products
+
+From Backend Team
+
+API
+--------
+Get All Orders
+
+GET request to /api/orders
+
+Sample Response:
+
+[
+    {
+     id:1,
+     name: 'James',
+     drink: 'Coffee'
+    },
+    {
+         id:2,
+         name: 'John',
+         drink: 'Latte'
+        },
+]
+
+============
+Add an Order
+
+POST request to /api/orders
+Type: JSON
+
+Sample Post:
+{
+  name: 'James',
+  drink: 'Coffee'
+}
+
+============
+Update an Order
+
+PUT request to /api/orders/{id}
+
+Sample Post:
+{
+  name: 'James',
+  drink: 'Coffee'
+}
+
+============
+Delete an Order
+
+DELETE request to /api/orders/{id}
+
+Sample Post:
+{
+  name: 'James',
+  drink: 'Coffee'
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript Arrow Function</title>
+</head>
+<body>
+<h1>Arrow Functions</h1>
+<button>Click</button>
+<script>
+
+  // Example Normal Function
+  function fn(){
+      console.log("Hello");
+  }
+  fn(); // function call
+
+  // Arrow Function
+  let fn2 = () => {
+      console.log("Hello")
+  }
+  fn2();// call function
+
+  // Normal Function with Parameter
+  let demo = function(text) {
+      return `Hello ${text}`;
+  }
+  console.log(demo("Everyone"));
+
+  // Arrow Function with Parameter
+  let demo2 = (text) => {
+      return `Hello ${text}`;
+  }
+ console.log(demo2("Everyone, Wel come back"));
+
+  let button = document.querySelector("button");
+
+  //Normal Function
+  // function fun(){
+  //     console.log(this); // <button>Click</button>
+  // }
+  // button.addEventListener("click", fun);
+
+  // Arrow function
+  let fun2 = () => {
+      console.log(this); // Browser All Window Showing
+  }
+  button.addEventListener("click", fun2);
+</script>
+</body>
+</html>

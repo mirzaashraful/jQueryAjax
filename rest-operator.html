@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Rest Operator</title>
+</head>
+<body>
+<h1>JavaScript Rest Operator</h1>
+
+<script>
+// Example 1
+// let numbers = [1,2,3,4,5];
+// function total(toAdd){
+//     let result = 0;
+//
+//     for(let i = 0; i < toAdd.length; i++){
+//         result += toAdd[i];
+//     }
+//     return result
+// }
+// console.log(total(numbers));
+
+// Example 2
+
+ function total(){
+     //console.log(arguments);
+     let result = 0;
+     for (let i in arguments){
+         result += arguments[i]
+     }
+     console.log(arguments);
+ }
+
+ total(1,2,3,4,5);
+
+</script>
+</body>
+</html>
